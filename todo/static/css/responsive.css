@@ -1,0 +1,57 @@
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logo, .theme-btn, .greeting {
+    flex-shrink: 0;
+  }
+
+  .todo-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .task-input form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .task-input input[type="text"],
+  .task-input input[type="submit"] {
+    width: 100%;
+  }
+
+  ul.task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  ul.task-list li span {
+    display: flex;
+    gap: 10px;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .delete-confirmation {
+    margin: 40px 15px;
+    padding: 20px;
+  }
+}

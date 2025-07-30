@@ -24,9 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-0wmlxo0)c)=yspy63c_a&s3@%z97hd5d_%3n85^0z3i=i&avlb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [
+    'todo.kavya-n03.com',  #custom domain        
+    'todo-app-g0xd.onrender.com',   
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition

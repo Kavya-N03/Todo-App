@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0wmlxo0)c)=yspy63c_a&s3@%z97hd5d_%3n85^0z3i=i&avlb
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'todo.kavya-n03.com',  #custom domain        
+    'kavya-n03.todoapp.com',  #custom domain        
     'todo-app-g0xd.onrender.com',   
     'localhost',
     '127.0.0.1',

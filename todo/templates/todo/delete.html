@@ -1,0 +1,14 @@
+{% extends 'todo/base.html' %}
+
+{% block content %}
+<div class="delete-confirmation">
+    <form method="POST" action="">
+        {% csrf_token %}
+        <h3>Are you sure you want to delete <b>{{ tasks.name }}</b>?</h3>
+        <div class="btn-group">
+            <input type="submit" value="✅ Yes, Confirm" />
+            <a href="{% url 'home' %}" class="cancel-btn">❌ Go Back</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

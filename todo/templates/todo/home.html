@@ -1,0 +1,38 @@
+{% extends 'todo/base.html' %}
+{% block content %}
+
+
+<div class="todo-container">
+
+    <!-- Task Form -->
+    <div class="task-input">
+        <form method="POST" action="">
+            {% csrf_token %}
+            {{ form.name}}
+            <input type="submit" value="Add" />
+        </form>
+    </div>
+
+    <!-- Task List -->
+    <ul class="task-list">
+        {% for task in tasks %}
+        <li>
+          <strong>{{ forloop.counter }}.</strong> {{ task.name }}
+            <span>
+                <a href="{% url 'task-update' task.id %}" class="icon">✏️</a>
+                <a href="{% url 'task-delete' task.id %}" class="icon">🗑️</a>
+            </span>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Messages -->
+    <div class="messages">
+        {% for message in messages %}
+        <h3>{{ message }}</h3>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

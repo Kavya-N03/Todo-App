@@ -4,30 +4,32 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #fff;
   color: #2e2e2e;
+  box-sizing: border-box;
 }
 
 /* Navbar */
 .nav-bar {
-  height: 50px;
   background-color: #333;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .logo h1 a {
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -42,6 +44,7 @@ body {
 .nav-links a:hover {
   background-color: #bfb0c6;
   color: #f4dfff;
+  border-radius: 4px;
 }
 
 .theme-btn {
@@ -56,6 +59,7 @@ body {
 .theme-btn:hover {
   background-color: #bfb0c6;
   color: #f4dfff;
+  border-radius: 4px;
 }
 
 .greeting {
@@ -83,6 +87,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .task-input input[type="text"] {
@@ -91,6 +96,7 @@ body {
   padding: 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  min-width: 200px;
 }
 
 .task-input input[type="text"]:focus {
@@ -130,16 +136,27 @@ ul.task-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
+ul.task-list li .task-text {
+  flex: 1;
+  min-width: 50%;
 }
 
 ul.task-list li span a {
   text-decoration: none;
   margin-left: 12px;
   transition: background 0.2s ease;
+  font-size: 18px;
 }
 
 ul.task-list li span a:hover {
   background-color: #975d5d;
+  color: white;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
 
 .icon {
@@ -185,6 +202,7 @@ ul.task-list li span a:hover {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .delete-confirmation input[type="submit"] {

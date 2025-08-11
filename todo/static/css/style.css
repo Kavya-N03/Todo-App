@@ -79,6 +79,11 @@ body {
 }
 
 /* Task Input Form */
+ input.task-input::placeholder{
+  text-align: center;
+  font-weight: 500;
+}
+
 .task-input {
   margin-bottom: 25px;
 }
@@ -95,17 +100,19 @@ body {
   font-size: 16px;
   padding: 10px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #161918;
   min-width: 200px;
 }
 
 .task-input input[type="text"]:focus {
   outline: none;
-  border-color: #383131;
-  box-shadow: 0 0 0 2px rgba(255, 111, 97, 0.5);
+  border-color: #484747;
+  box-shadow: 0 0 0 2px rgba(188, 181, 180, 0.5);
 }
 
 .task-input input[type="submit"] {
+  height: 40px;
+  width: 90px;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #23292b;
@@ -114,6 +121,7 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
 }
 
 .task-input input[type="submit"]:hover {
